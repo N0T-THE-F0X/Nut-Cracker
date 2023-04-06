@@ -22,10 +22,10 @@ int main(){
             
             if(password == crack){ //checks if the whole password has been cracked
                 auto end_time = chrono::high_resolution_clock::now(); //ends the stopwatch
-                auto duration = chrono::duration_cast<chrono::microseconds>(end_time - start_time); // 
+                auto duration = chrono::duration_cast<chrono::microseconds>(end_time - start_time); //Computes the time diference
                 cout << "\nPassword: " << password;
-                cout << "\nCracked: " << crack;
-                cout << "\nElapsed time: " << duration.count() << " microseconds.";
+                cout << "\n Cracked: " << crack;
+                cout << "\n    Time: " << duration.count() << " microseconds.";
                 check = false;
             }
         }
